@@ -2,35 +2,175 @@
 <html>
     <head>
         <title>Sophia's Website</title>
-    </head>
+    <style>
+            
+            body {
+                background-image: url("http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/Water.jpg?itok=lOpwiABA");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                color: rgb(45, 45, 45);
+                padding: left 10px;
+                font-family:sans-serif;
+                text-decoration:none;
+            }
+            
+            h1 {
+                color: white;
+            }
+            
+            header {
+                font-size: 2.5em;
+                font-weight:auto;
+                color:rgb(255,255,255);
+                 text-decoration:none;
+                 font-family:sans-serif;
+                 border-radius: 100px;  
+            }
+            
+             [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+                text-decoration:none;
+            
+            }
+        
     
+            /* navigation menu */
+            nav { 
+               border:5px solid rgb(255,255,255);
+                background: rgb(102,102,153);
+                margin: 20 auto;
+                /*display: flex;*/
+                width:980px;
+                padding: 10px;
+                height:100px;
+                text-decoration:none;
+                border-radius:100px;
+                
+                
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 0, 0);
+                flex: 1;
+                text-decoration:none;
+            
+            
+            }
+            nav ul {
+                list-style-image: none;
+                text-decoration:none;
+            }
+            nav li {
+                display: inline-block;
+                padding:5px;
+                
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            a,a img { text-decoration:none;
+            }
+                
+        
+            /* main container area beneath menu */
+            main {
+               border:5px solid rgb(255,255,255);
+               background: rgb(117, 117,163 );
+              
+                display:flex;
+                width:1020px;
+                height:250px;
+                text-decoration:none;
+                border-radius:100px;
+             
+
+        
+            }
+            
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+                color: white;
+                
+            }
+            [class=interests] header {
+                font-size: 3.5em;
+                text-decoration:none;
+                
+            }    
+            [class=sidebar] img {
+                width: 230px;
+                height: 200px;
+                border:5px solid rgb(255,255,255);
+                text-decoration:none;
+                border-radius:100px;
+                
+                
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+                text-decoration:none;
+                
+                
+            }
+            
+                
+            
+        </style>
+   </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <body>
         <div id="all contents"> 
-            <nav>
+            <nav> 
+            <h1>Sophia Matylis</h1>
+            <ul>
+                 
+            <li><a href= "index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
             </nav>
         
            <main> 
             <div class= "sidebar">
-                <img src= "http://img.taste.com.au/gOpVgvz8/taste/2016/11/classic-chewy-brownie-102727-1.jpeg">
-         </div>
+                <img src= "http://slice.seriouseats.com/images/20100719-tpr-beauty.jpg">
+            </div>
+            
+            <div class= "sidebar">
+                  <header> About me... </header>
+              <p> I'm an amazing person and a student at Destrehan </p> 
+            </div>
+            
+            <div class= "sidebar">
+                <header>Interests</header>
+                <ul>
+                    <li> Swimming</li>
+                    <li> Eating</li>
+                    <li> Learning</li>
+                </ul>
+            </div>
           
           </main>
           <div class= "content">
-              <header> Sophia Matylis </header>
-              <p> I'm an amazing person and a student at Destrehan </p>
+           
          </div>
+       <main>
+           <div class="content">
+               <header>Professional Interests</header>
+                <section class = "interests">
+            <button>Click</button>
+            <ul class="professional-interests">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+           </div>
+       
+       </main>
         
-        <section class= "interest">
-         <header> Interests'</header>
-         <ul>
-             <li>Swimming</li>
-             <li>Art</li>
-             <li>Eating</li>
-             <li>Chess</li>
-         </ul>
-        </section> 
-        
-        </div>
     </body>
 </html>
 
